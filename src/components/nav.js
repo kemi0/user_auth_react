@@ -6,13 +6,16 @@ import { changeAuth } from '../actions';
 class Nav extends Component {
     renderLinks(){
         const { auth, changeAuth } = this.props;
-        const btnStyle = {
-            width: '131px'
-        };
+        // const btnStyle = {
+        //     width: '131px'
+        // };
 
         if(auth){
             return (
                 <Fragment>
+                    <li>
+                        <Link to="/movie-quote">Movie Quote</Link>
+                    </li>
                     <li>
                         <Link to="/secret-doc">Secret Doc</Link>
                     </li>
@@ -20,24 +23,29 @@ class Nav extends Component {
                         <Link to="/operative-list">Operative List</Link>
                     </li>
                     <li>
-                        <button style={btnStyle} className="btn red darken-2" onClick={() => changeAuth(false)}>Sign Out</button>
+                        <Link to="/sign-out">Sign Out</Link>
                     </li>
                 </Fragment>
             );
         }
 
         return (
-            <li>
-                <button style={btnStyle} className="btn grey" onClick={() => changeAuth(true)}>Sign In</button>
-            </li>
+            <Fragment>
+                <li>
+                    <Link to="/sign-in"> Sign In</Link>
+                </li>
+                <li>
+                    <Link to="/sign-up">Sign Up</Link>
+                </li>
+            </Fragment>
         );
     }
 
     render(){
         return (
-            <nav className="blue-grey" style={{ padding: '0 12px' }}>
+            <nav className="yellow lighten-1" style={{ padding: '0 12px' }}>
                 <div className="nav-wrapper">
-                    <Link to="/" className="brand-logo">AIC DATA</Link>
+                    <Link to="/" className="brand-logo style={color: black}">TMZ Reloaded</Link>
                     <ul className="right ">
                         <li>
                             <Link to="/">Home</Link>

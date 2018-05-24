@@ -3,16 +3,16 @@ import auth from '../hoc/auth';
 
 const OpList = props => (
     <div>
-        <h1 className="center">Secret Operative List</h1>
+        <h1 className="center">FBI Operative List</h1>
         <ol>
-            <li>Corey</li>
+            <li>Duy smallz</li>
             <li>Sarah</li>
-            <li>Steve</li>
-            <li>Samantha</li>
-            <li>George</li>
-            <li>Heather</li>
-            <li>Leon</li>
-            <li>Martha</li>
+            <li>Steve Smakiy</li>
+            <li>Sandra bullridge</li>
+            <li>William suzki</li>
+            <li>Hanhh kim</li>
+            <li>Brian bourne</li>
+            <li>Ryan Soto</li>
         </ol>
     </div>
 );

@@ -1,8 +1,12 @@
 import React from 'react';
+// import tmz from '../assets/images/tmzCrew.jpg';
 
 export default props => (
     <div>
-        <h1 className="center">This is the home page</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus temporibus eveniet et reiciendis dolores cum provident accusamus debitis iusto! Ullam.</p>
+        <h1 className="center">Find The Hottest News here only on TMZ Reloaded!</h1>
+        <div className="center">
+            {/* <img src={tmz} /> */}
+        </div>
     </div>
 )
+
