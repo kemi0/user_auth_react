@@ -10,6 +10,7 @@ import SignUp from './sign_up';
 import SignIn from './sign_in';
 import MovieQuote from './movie_quote';
 import redirect from '../hoc/redirect';
+
 import auth from '../hoc/auth';
 
 
